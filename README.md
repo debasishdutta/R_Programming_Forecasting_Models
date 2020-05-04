@@ -39,11 +39,17 @@ Steps For Execution:
 1. Copy these codes on current working directory of R Session. 
 2. Put the input file on current working directory of R Session. Please note algorithm will accept xlsx format only. Please find the attached sample data for the format that needs to be maintained. 
 3. Execute following lines of codes: 
+
 source_file_name <- "Sample Time Series Data.xlsx" ##### xlsx files only 
+
 date_stamp <- "Date" ##### Name of The Date Stamp 
+
 n_obs <- 215 ##### No of Rwos In Input File 
+
 source("Model Selection.R") 
+
 df_mape <- best_model_selection(source_file_name, date_stamp, n_obs) 
+
 
 Compatibility: 
 The code is developed and tested on RStudio (Version 1.0.44) using R-3.3.2
